@@ -60,8 +60,12 @@ class NumberList {
 	 */
 	public void removeIndexOfFirstHalf() {
 		//TODO ここから実装する
-		for (int i = 0; i < (int) (numbers.size() / 2); i++) {
-			numbers.remove(i);
+
+		int index = 0;
+		int s = numbers.size();
+		while (index < s / 2) {
+			numbers.remove(0);
+			index++;
 		}
 
 	}

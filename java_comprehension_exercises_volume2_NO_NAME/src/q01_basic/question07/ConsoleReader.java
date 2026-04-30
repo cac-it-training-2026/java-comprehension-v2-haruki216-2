@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ConsoleReader {
-	public void inputNumber() throws IOException, NumberFormatException {
+	public Integer inputNumber() throws IOException, NumberFormatException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		int input = Integer.parseInt(reader.readLine());
-
+		return input;
 	}
 
 }
