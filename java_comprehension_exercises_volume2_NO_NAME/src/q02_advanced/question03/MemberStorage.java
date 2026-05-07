@@ -10,6 +10,7 @@ class MemberStorage {
 	/**
 	 * @param members
 	 */
+	//getInstanceでMemberオブジェトを作成
 	public MemberStorage() {
 		this.members = new ArrayList<>();
 		members.add(Member.getInstance(1, "Passw0rd", "Miura Manabu", 28, 2));

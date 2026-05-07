@@ -44,6 +44,8 @@ public class Coupon {
 		return "Coupon [id=" + id + ", discountRate=" + discountRate + ", description=" + description + "]";
 	}
 
+	//引数で値を渡してreturnで値を入れたオブジェトを返す
+	//1だとnewで記述してたのをメソッドで生成する
 	public static Coupon getInstance(int id, double discountRate, String description) {
 		return new Coupon(id, discountRate, description);
 	}
